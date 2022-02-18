@@ -1,7 +1,6 @@
 <h1> Crear lista nueva </h1>
-<%= form_for @list do |f| %>
-<%= f.label :name %> <br> <br>
-<%= f.input :photo, as: :file %> <br> <br>
-<%= f.text_area :name %> <br> <br>
+<%= simple_form_for @list do |f| %>
+<%= f.input :name %> <br> <br>
+<%= f.input :photos, as: :file, input_html: { multiple: true } %> <br> <br>
 <%= f.submit %>
 <% end  %>
