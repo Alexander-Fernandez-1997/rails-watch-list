@@ -12,3 +12,5 @@ import "bootstrap";
 Rails.start();
 Turbolinks.start();
 ActiveStorage.start();
+// import { levitar_objetos() } from "../components/levitar"
+// levitar_objetos()
